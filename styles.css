@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-image: url('images/al-sabbah_Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    max-height: 80vh;
+    justify-content: space-between;
+}
+
+.graveyardContainer {
+    width: 25%;
+    margin: auto;
+}
+
+#gameBoardContainer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+#board {
+    position: relative;
+}
+
+svg
+{
+    width: 100%;
+    max-height: 75vh;
+}
+
+#nizariContainer, #qujarsContainer, #pointsContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#nizariGraveyard, #qujarGraveyard {
+    display: block;
+    height: min-content;
+    border: solid 2px #000;
+}
+
+#nizariGraveyard {
+    width: 80px;
+    margin: 0 auto;
+}
+
+#qujarGraveyard {
+    width: 150px;
+    margin: 0 auto
+}
+
+.nizariPlayer, .qujarPlayer
+{
+    max-width: 75px;
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+
+.nizariGraveyardPlayer, .qujarGraveyardPlayer
+{
+    max-width: 75px;
+    visibility: hidden;
+}
+
+.positionPoint {
+    z-index: 50;
+}
+
+.positionPoint {
+    r: 5px;
+    fill: red;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#nizariTitle, #qujarTitle {
+    text-align: center;
+}
+
+.rules-link {
+    font-size: 2em;
+    margin-left: 10%;
+}
+
+#timer {
+    position: absolute;
+    right: 10%;
+}
+
+#timerModal {
+    display: block;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+.playerActive {
+    filter: drop-shadow(crimson 0px 0px 0.75rem);
+}
+
+#gameOverModal {
+    display: none;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+}
