@@ -156,15 +156,15 @@ function createPlayers() {
 
     while (qujarPieceCount < 9)
     {
-        document.getElementById('qujarsContainer').innerHTML += `<img id="qujarPlayer${qujarPieceCount}" class="qujarPlayer" src="./images/qujar_game_piece.png" alt="Qujars">`;
-        document.getElementById('qujarGraveyard').innerHTML += `<img id="qujarGraveyardPlayer${qujarPieceCount}" class="qujarGraveyardPlayer" src="./images/qujar_game_piece.png" alt="Qujars">`;
+        document.getElementById('qujarsContainer').innerHTML += `<img id="qujarPlayer${qujarPieceCount}" class="qujarPlayer" src="./Images/qujar_game_piece.png" alt="Qujars">`;
+        document.getElementById('qujarGraveyard').innerHTML += `<img id="qujarGraveyardPlayer${qujarPieceCount}" class="qujarGraveyardPlayer" src="./Images/qujar_game_piece.png" alt="Qujars">`;
         qujarPieceCount++;
     }
 
     while (nizariPieceCount < 3)
     {
-        document.getElementById('nizariContainer').innerHTML += `<img id="nizariPlayer${nizariPieceCount}" class="nizariPlayer" src="./images/nizari_game_piece.png" alt="Nizari">`;
-        document.getElementById('nizariGraveyard').innerHTML += `<img id="nizariGraveyardPlayer${nizariPieceCount}" class="nizariGraveyardPlayer" src="./images/nizari_game_piece.png" alt="Nizari">`;
+        document.getElementById('nizariContainer').innerHTML += `<img id="nizariPlayer${nizariPieceCount}" class="nizariPlayer" src="./Images/nizari_game_piece.png" alt="Nizari">`;
+        document.getElementById('nizariGraveyard').innerHTML += `<img id="nizariGraveyardPlayer${nizariPieceCount}" class="nizariGraveyardPlayer" src="./Images/nizari_game_piece.png" alt="Nizari">`;
         nizariPieceCount++;
     }
 };
