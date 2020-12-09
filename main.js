@@ -304,7 +304,7 @@ function gameBoardClicked(event) {
 
             document.querySelectorAll('.qujarPlayer').forEach(function(qujar) {
                 if (gamePiece.target.dataset.position == qujar.dataset.position) {
-                    qujar.style.display = 'none';
+                    qujar.parentNode.removeChild(qujar);
                     document.getElementById('qujarGraveyard').children[numberOfDeadQujar].style.visibility = 'visible';
 
                     if (numberOfDeadQujar == 8) {
@@ -327,7 +327,7 @@ function gameBoardClicked(event) {
             document.querySelectorAll('.nizariPlayer').forEach(function(nizari) {
                 if (gamePiece.target.dataset.position == nizari.dataset.position) {
 
-                    nizari.style.display = 'none';
+                    nizari.parentNode.removeChild(nizari);
                     document.getElementById('nizariGraveyard').children[numberOfDeadNizari].style.visibility = 'visible';
 
                     if (numberOfDeadNizari == 2) {
